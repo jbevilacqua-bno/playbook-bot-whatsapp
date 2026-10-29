@@ -1,0 +1,5 @@
+.env
+**/registros/
+**/sesiones/
+**/conversaciones/
+node_modules/

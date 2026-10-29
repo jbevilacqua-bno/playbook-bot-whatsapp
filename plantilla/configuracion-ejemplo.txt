@@ -1,0 +1,30 @@
+# ===================================================================
+#  Configuración del bot. INICIAR-BOT.cmd copia este archivo como
+#  %USERPROFILE%\.bot-cliente\.env (fuera del código y de Dropbox).
+#  Estos datos son secretos: no se mandan por correo, chat ni WhatsApp.
+# ===================================================================
+EMPRESA=Empresa Ejemplo
+
+# --- Meta / WhatsApp (docs/06-meta-app-y-numero-de-prueba.md) ------
+WHATSAPP_TOKEN=PEGAR_AQUI               # token permanente del usuario del sistema (empieza con EAA)
+WHATSAPP_APP_SECRET=PEGAR_AQUI          # app › Configuración › Básica › Clave secreta de la app
+WHATSAPP_APP_ID=PEGAR_AQUI              # app › Configuración › Básica › Identificador de la app
+WHATSAPP_PHONE_NUMBER_ID=PEGAR_AQUI     # WhatsApp › Configuración de la API › identificador del número
+WHATSAPP_WABA_ID=PEGAR_AQUI             # mismo lugar › identificador de la cuenta de WhatsApp Business
+WHATSAPP_VERIFY_TOKEN=bot-cliente-prueba-2026   # frase inventada; el servidor la registra sola en Meta
+
+# --- HubSpot (docs/04-conectar-hubspot.md) --------------------------
+# simular = no manda nada; guarda en registros/hubspot lo que mandaría. real = crea/actualiza el contacto.
+HUBSPOT_MODO=simular
+HUBSPOT_TOKEN=
+
+# --- IA de Claude (docs/05-conectar-ia-claude.md) -------------------
+# Sin llave contestan solo las reglas. USAR_IA=0 la apaga aunque haya llave.
+ANTHROPIC_API_KEY=
+MODELO_IA=claude-sonnet-5-5
+USAR_IA=1
+
+# --- Técnico ----------------------------------------------------------
+AMBIENTE=pruebas      # produccion en el servidor definitivo
+PORT=8088
+GRAPH_VERSION=v22.0
